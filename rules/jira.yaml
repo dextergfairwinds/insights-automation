@@ -1,0 +1,6 @@
+name: "Assign API Action Items"
+description: "Assigns all Action Items in the api namespace to api-team@acme-co.com"
+action: |
+  if (ActionItem.ResourceNamespace === 'api') {
+    ActionItem.AssigneeEmail = 'api-team@acme-co.com';
+  }
